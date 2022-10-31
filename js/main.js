@@ -43,7 +43,7 @@
   
   //当選番号一覧の初期化
   const resetBingo = () =>{
-    currentNumber.textContent = '?';//currentNumberの初期化
+    currentNumber.textContent = '';//currentNumberの初期化
     const hits = result.querySelectorAll('.hit');//hitクラスを取り除く
     hits.forEach(hit =>{
       hit.classList.remove('hit');
