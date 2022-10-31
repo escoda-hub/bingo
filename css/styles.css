@@ -16,60 +16,23 @@
   justify-content: center; 
 }
 
-.present{
-  display: flex;
-  flex-direction: column;  
-  justify-content: center; 
-}
-
 .table{
   display: flex;
   flex-direction: column;  
   justify-content: space-around; 
 }
 
-
-/* 景品 */
-.present label{
-  display: block;
-  width: 270px;
-  background: #c8c8c8;
-  color: rgb(5, 5, 5);
-  padding: 10px;
-  margin: 10px;
-  font-size:20px;
-  text-align: center;
-  border-radius: 30px;
-}
-.present input:checked+label{
-  background: #B8A976;
-  color: #7c7b7b;
-}
-.present input{
-  display: none;
-}
-
-#presentTitle{
-  width: 90px;
-  height: 100px;
-  margin:0px auto 0px auto;/* 上 | 右 | 下 | 左 */
-  background: transparent;
-  border: 0px solid #FFF;
-  padding: 0px;
-
-}
-
 /* 当選番号 */
 #current-number{
   text-align:center;/* テキストを中央揃え*/
-  line-height: 320px;/*当選番号を表示する位置*/
+  line-height: 310px;/*当選番号を表示する位置*/
   margin:10px 0;/* 上下に10px 左右に0pxのマージン*/
   font-size:70px;
   font-weight:bold;
   font-family: 'Itim', cursive;
-  height: 570px;
-  width:190px; 
-  background-image: url(../resorce/kakeziku_withCloud.gif);
+  height: 560px;
+  width:185px; 
+  background-image: url(../resorce/kakeziku.png);
   background-size: cover;
 }
 
@@ -79,8 +42,8 @@
   position: relative;
   overflow: hidden;
   display: block;
-  height: 230px;
-  width: 130px;
+  height: 190px;
+  width: 110px;
   background: transparent;
   border: 0px solid #FFF;
   padding: 0px;
@@ -88,7 +51,7 @@
 
 /* 当選結果表示枠 */
 #result{
-  width:350px;
+  width:420px;
   margin:10px auto 10px;/* 上下に0px 左右にautoのマージン*/
 }
 
@@ -97,8 +60,6 @@
   display:flex;
   justify-content:space-evenly;/* 行の中の当選番号を均等に*/
   margin-bottom:0px;/* 行と行の間のマージン*/
-  /* margin:5px auto 5px;上下に0px 左右にautoのマージン */
-  /* background-color:#d88057; */
 }
 
 /* 当選履歴番号 */
@@ -110,15 +71,13 @@
   margin:5px auto 5px;
   line-height:40px;
   background-color: #B8A976;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: normal;
   font-family: 'Itim', cursive;
 }
 
 /* 当選番号のセル */
 .column.hit{
-  background-color: rgb(232, 224, 66);
-  color:rgb(2, 3, 3)
+  background-color: rgb(62, 62, 62);
+  color:rgb(202, 202, 202)
 }
-
-

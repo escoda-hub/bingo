@@ -5,12 +5,10 @@
   const currentNumber = document.getElementById('current-number');
   const startButton = document.getElementById('start-button');
   const result = document.getElementById('result');
-  const presentTitle = document.getElementById('presentTitle');
 
   const from = 1;//当選番号の開始番号
   const to = 75;//当選番号の終了番号
   const lotteryNumbers = [];//1~75までの当選番号を格納する
-
 
   // lotteryNumbersの初期化
   const resetLotteryNumbers = nums =>{
@@ -35,7 +33,6 @@
     column.classList.add('column');
     row.appendChild(column);
   });
-  
 
   result.appendChild(fragment);
 
@@ -51,15 +48,8 @@
     hits.forEach(hit =>{
       hit.classList.remove('hit');
     });
-
     resetLotteryNumbers(lotteryNumbers);
   }
-
-  //提灯がクリックされた時の処理->初期化
-  presentTitle.addEventListener('click',()=>{
-    //チェックボックスを初期化したい
-
-  });
 
   //スタートボタンがクリックされた時の処理
   startButton.addEventListener('click',()=>{
