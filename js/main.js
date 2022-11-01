@@ -23,7 +23,7 @@
   let row;
   // 当選番号を格納する行を作る（一行１５個）　image->1-15/16~30/31~45/...
   lotteryNumbers.forEach((num,index)=>{
-    if(index % 5 === 0){
+    if(index % 15 === 0){
       //行を作成
       row = fragment.appendChild(document.createElement('div'));//rowには、行のdivが格納されている
       row.classList.add('row');

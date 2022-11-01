@@ -47,11 +47,12 @@
   background: transparent;
   border: 0px solid #FFF;
   padding: 0px;
+  cursor: pointer;
 }
 
 /* 当選結果表示枠 */
 #result{
-  width:420px;
+  width:700px;
   margin:10px auto 10px;/* 上下に0px 左右にautoのマージン*/
 }
 
@@ -65,13 +66,13 @@
 /* 当選履歴番号 */
 .column{
   width:60px;
-  height:40px;
+  height:60px;
   border-radius:20px;/* 当選番号表示枠の丸み　*/
   text-align:center;
-  margin:5px auto 5px;
-  line-height:40px;
+  margin:10px 10px 10px 10px;
+  line-height:60px;
   background-color: #B8A976;
-  font-size: 35px;
+  font-size: 50px;
   font-weight: normal;
   font-family: 'Itim', cursive;
 }
@@ -79,5 +80,5 @@
 /* 当選番号のセル */
 .column.hit{
   background-color: rgb(62, 62, 62);
-  color:rgb(202, 202, 202)
+  color:rgb(255, 255, 255)
 }
